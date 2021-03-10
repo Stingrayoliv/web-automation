@@ -19,9 +19,14 @@ public class HomePageSteps implements En {
 
     public HomePageSteps() {
 
-        Given("I am on the Homepage", () -> {
-            homePage = open(basicURL, HomePage.class);
-            homePage.acceptCookies();
+        Given("I am on the {}", (String page) -> {
+            if (page.equals( "Homepage" )){
+                homePage = open(basicURL, HomePage.class);
+                homePage.acceptCookies();
+            }
+            if (page.equals( "Loginpage" )){
+                open("https://www.sconto.de/login");
+            }
         });
 
         Then("I should see Homepage", () -> {

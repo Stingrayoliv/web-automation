@@ -14,9 +14,9 @@ public class LoginPage {
 
     /* Elements */
 
-    private static By emailInput = By.id("loginEmail");
-    private static By pwdInput = By.id("loginPassword");
-    private static By loginBtn = By.id("login-submit");
+    public static By emailInput = By.id("loginEmail");
+    public static By pwdInput = By.id("loginPassword");
+    public static By loginBtn = By.id("login-submit");
     private static By loginHeader = By.cssSelector(".existingAccount__headline");
 
 
