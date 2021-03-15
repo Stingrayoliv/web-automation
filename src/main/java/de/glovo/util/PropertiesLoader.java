@@ -1,4 +1,4 @@
-package de.sconto.util;
+package de.glovo.util;
 
 import java.io.IOException;
 import java.util.Properties;
